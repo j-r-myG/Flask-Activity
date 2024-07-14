@@ -21,7 +21,7 @@ def main():
 
 @app.route("/display-words/<words>")
 def display_words(words:str):
-    words_list = words.split(',')
+    words_list:list[str] = words.split(',')
     missing_index:list = [i for i, j in enumerate(words_list) if not j]
 
     if missing_index:
