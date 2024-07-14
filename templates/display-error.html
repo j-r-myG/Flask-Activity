@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Error!</title>
+{% endblock %}
+
+{% block body %}
+    <div class="form">
+        <div class="title" style="text-align: center">Error! Missing one or few words!</div>
+        <div class="title" style="text-align: center">Missing word for text field/s:</div>
+            <table>
+                <tr>
+                    {% for index in indexes %}
+                        <td>Text {{ index + 1 }}</td>
+                    {% endfor %}
+                </tr>
+            </table>
+        <div class="center">
+            <a href="/" style="margin-top: 20px; width: 100%; text-align: center;">Return</a> 
+        </div>
+    </div>
+{% endblock %}

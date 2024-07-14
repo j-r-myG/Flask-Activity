@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Asynch Task</title>
+{% endblock %}
+
+{% block body %}
+<div class="form">
+<div class="title">Enter Five Texts</div>
+    <form action="http://127.0.0.1:5000/" method="POST">
+        <div class="input-container ic1">
+            <input type="text" name="txt1" id="txt1" placeholder="Text 1" class="input">
+        </div>
+        <div class="input-container ic1">
+            <input type="text" name="txt2" id="txt2" placeholder="Text 2" class="input">
+        </div>
+        <div class="input-container ic1">
+            <input type="text" name="txt3" id="txt3" placeholder="Text 3" class="input">
+        </div>
+        <div class="input-container ic1">
+            <input type="text" name="txt4" id="txt4" placeholder="Text 4" class="input">
+        </div>
+        <div class="input-container ic1">
+            <input type="text" name="txt5" id="txt5" placeholder="Text 5" class="input">
+        </div>
+        <input type="submit" value="Submit" class="submit"/>
+    </form>
+</div>
+
+{% endblock %}
